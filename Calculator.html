@@ -1,0 +1,217 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Task (Calculator)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            
+            text-align: center;
+        }
+        .container{
+            height: 450px;
+            width: 330px;
+            margin: 0 auto;
+            background:linear-gradient(to bottom, #000000, #4d4d4d);
+            border-style: groove;
+            border-color: #ebdddd;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        h4{
+            color: aliceblue;
+        }
+        .name{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 5px 0 5px;
+        }
+        p{
+            color: green;
+            text-align: center;
+            margin: 0;
+        }
+        .display{
+            width: 300px;
+            height: 60px;
+            background-color: gainsboro;
+            margin: 5px auto;
+            border-radius: 10px;
+            box-shadow: #4d4d4d;
+        }
+        .line1{
+            display: flex;
+            justify-content: center;
+        }
+        .line1 p{
+            height: 13px;
+            box-sizing: border-box;
+            padding-top: 2px;
+            width: 40px;
+            background-color: beige;
+            border-radius: 10px;
+            color: #000000;
+            font-size: 8px;
+            margin: 2px 7px;
+        }
+        .line1 span{
+            height:50px;
+            width: 80px;
+            background-color: rgb(231, 210, 157);
+            box-sizing: border-box;
+            padding-top: 2px;
+            border-radius: 60px;
+            color: rgb(232, 141, 4);
+            text-align: center;
+            padding-top: 10px;
+        }
+        .line2{
+            display: flex;
+            justify-content: center;
+        }
+        .line2 p{
+            height: 13px;
+            width: 40px;
+            background-color: rgb(20, 20, 18);
+            border-radius: 10px;
+            color: #ebdddd;
+            font-size: 8px;
+            margin: 0 5px;
+        }
+        .line2 span{
+            
+            width: 80px;
+            border-radius: 60px;
+           
+        }
+        .linex, .liney, .linez{
+            display: flex;
+            justify-content: center;
+            margin: 2px;
+        }
+        .linex p, .liney p, .linez p{
+            height: 15px;
+            width: 40px;
+            background-color: rgb(16, 16, 15);
+            border-radius: 10px;
+            color: #b5b0b0;
+            font-size: 8px;
+            margin: 2px 7px;
+            box-shadow: black;
+        }
+        .linexx, .lineyy, .linezz, .linebb{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+        }
+        .linexx p, .lineyy p, .linezz p, .linebb p{
+            box-sizing: border-box;
+            height: 25px;
+            width: 50px;
+            background-color: rgb(155, 155, 152);
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 15px;
+            
+            margin: 2px 7px;
+            padding-top: 3px;
+            text-align: center;
+            box-shadow: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <span style="color: turquoise;">WEB3 Programming</span><br>
+            <span style="color: rgb(76, 169, 193);">Task: 01 (HTML+CSS)</span><br>
+            <span style="color: rgb(2, 35, 24);">fx-991EX</span>
+        </h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="name">
+                <h4>OSALO</h4>
+                <h4>OS-100MS</h4>
+            </div>
+            <p>Scientific Calculator</p>
+            <div class="display">
+
+            </div>
+            <div class="numbers">
+                <div class="line">
+                    <div class="line1">
+                        <p>SHIFT</p>
+                        <p style="margin-top: 10px;">ALPHA</p>
+                        <span>Replay</span>
+                        <p style="margin-top: 10px;">SHIFT</p>
+                        <p>ALPHA</p>
+                    </div>
+                    <div class="line2">
+                        <p>SHIFT</p>
+                        <p>ALPHA</p>
+                        <span></span>
+                        <p>SHIFT</p>
+                        <p>ALPHA</p>
+                    </div>
+                </div>
+                <div class="linex">
+                    <p>ab/c</p>
+                    <p>/^</p>
+                    <p>x2</p>
+                    <p>^</p>
+                    <p>log</p>
+                    <p>In</p>
+                </div>
+                <div class="liney">
+                    <p>(-)</p>
+                    <p>''''</p>
+                    <p>hyp</p>
+                    <p>sin</p>
+                    <p>cos</p>
+                    <p>tan</p>
+                </div>
+                <div class="linez">
+                    <p>RCL</p>
+                    <p>ENG</p>
+                    <p>(</p>
+                    <p>)</p>
+                    <p>'</p>
+                    <p>M+</p>
+                </div>
+                
+                <div class="linexx">
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p style="background-color: rgb(236, 92, 121);">Del</p>
+                    <p style="background-color: crimson;">AC</p>
+                </div>
+                <div class="lineyy">
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>*</p>
+                    <p>/</p>
+                </div>
+                <div class="linezz">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>+</p>
+                    <p>-</p>
+                </div>
+                <div class="linebb">
+                    <p>0</p>
+                    <p>.</p>
+                    <p>EXP</p>
+                    <p>ANS</p>
+                    <p>=</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body></html>
